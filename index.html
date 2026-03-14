@@ -2,7 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+    <!-- Fill the notch/safe-area zone — iOS paints this area using the html element background -->
+    <style>
+      html { background: #F5EDE4; }
+      @media (prefers-color-scheme: dark) { html { background: #0E0A08; } }
+    </style>
 
     <title>Satilea — Handcrafted Satin Flowers</title>
     <meta name="description" content="Satilea — Luxury handcrafted satin flowers for weddings, events, and gifts. Custom orders, UAE-wide delivery. Forever flowers that never wilt." />
@@ -33,10 +38,11 @@
     <!-- Favicon placeholder -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <!-- Theme color (updated by ThemeContext) -->
-    <meta name="theme-color" content="#FDF8F4" />
-    <script type="module" crossorigin src="/SatileaFlowers/assets/index-f0l9xXfB.js"></script>
-    <link rel="stylesheet" crossorigin href="/SatileaFlowers/assets/index-CBzNcH6E.css">
+    <!-- Theme colour = the gap/status-bar colour iOS Safari shows above the page -->
+    <meta name="theme-color" content="#0E0A08" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0E0A08" media="(prefers-color-scheme: dark)" />
+    <script type="module" crossorigin src="/SatileaFlowers/assets/index-D_hr3jgJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/SatileaFlowers/assets/index-CcBxgV9R.css">
   </head>
   <body>
     <div id="root"></div>
